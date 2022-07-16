@@ -431,8 +431,10 @@ img {
     background-color: #F5F4FA;
 }
 
-.clients-icon {
-    display: block;
+.clients-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
