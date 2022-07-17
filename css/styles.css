@@ -144,7 +144,8 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px;
+    margin-right: 10px;
+    margin-left: 30px;
     color: var(--main-txt-clmain-txt-cl);
 }
 
@@ -179,6 +180,7 @@ img {
 
 .main {
     background-color: #2F303A;
+    background: rgba(47, 48, 58, 0.4);
     background-image: url(../images/Img.jpg);
     background-size: cover;
     padding-top: 200px;
@@ -238,14 +240,14 @@ img {
     background-color: #F5F4FA;
     border: none;
     cursor: pointer;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
 
 .button-filter:hover,
 .button-filter:focus {
-    color: var(--accent-txt-cl);
-    background-color: #FFFFFF;
+    color: #FFFFFF;
+    background-color: var(--accent-txt-cl);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -383,6 +385,12 @@ img {
     letter-spacing: 0.03em;
 }
 
+.portfolio-item:hover,
+.portfolio-item:focus {
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .portfolio-title {
     margin-bottom: 4px;
     font-weight: 700;
@@ -427,9 +435,10 @@ img {
     color: var(--main-txt-cl);
 }
 
-.clients-list {
+
+/*.clients-list {
     background-color: #F5F4FA;
-}
+}*/
 
 .clients-item {
     display: flex;
@@ -437,8 +446,15 @@ img {
     justify-content: center;
     width: 170px;
     height: 92px;
+    fill: #AFB1B8;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+}
+
+.clients-item:hover,
+.clients-item:focus {
+    fill: #2196F3;
+    border: 1px solid #2196F3;
 }
 
 
